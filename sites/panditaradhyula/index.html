@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panditaradhyula's Family — Coming Soon</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  /* Reset & base */
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { height:100%; font-family: 'Lora', serif; }
+
+  body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: linear-gradient(135deg, #fff7f2, #f0e8f5);
+    color: #5b3b2e;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+
+  /* Floral corner decorations */
+  .corner {
+    position:absolute;
+    width:150px; height:150px;
+    background-image: url('floral.png'); /* placeholder */
+    background-size:contain;
+    background-repeat:no-repeat;
+    opacity:0.8;
+  }
+  .corner.top-left { top:0; left:0; transform: rotate(0deg); }
+  .corner.bottom-right { bottom:0; right:0; transform: rotate(180deg); }
+
+  /* Main content */
+  .container { max-width:600px; padding:20px; }
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size:4rem;
+    color:#8b5fbf;
+    margin-bottom:0.5em;
+  }
+  h2 {
+    font-size:1.5rem;
+    color:#4a3750;
+    margin-bottom:1.5em;
+  }
+
+  p {
+    font-size:1rem;
+    color:#5b3b2e;
+    margin-bottom:2em;
+  }
+
+  /* Social / contact buttons */
+  .btn {
+    display:inline-block;
+    margin:5px;
+    padding:10px 18px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:700;
+    color:white;
+    background: linear-gradient(90deg,#8b5fbf,#c78bd3);
+    box-shadow: 0 5px 15px rgba(139,95,191,0.2);
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139,95,191,0.3);
+  }
+
+  /* Footer */
+  footer {
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    font-size:0.9rem;
+    color:#5b3b2e;
+  }
+
+  /* Responsive */
+  @media(max-width:500px) {
+    h1 { font-size:3rem; }
+    h2 { font-size:1.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="corner top-left"></div>
+<div class="corner bottom-right"></div>
+
+<div class="container">
+  <h1>Panditaradhyula's Family</h1>
+  <h2>Website Coming Soon</h2>
+  <p>We are preparing something special for our family and friends. Stay tuned!</p>
+  <a class="btn" href="mailto:psaimanikanth17@gmail.com">Contact Us</a>
+  <a class="btn" href="https://wa.me/14375576679" target="_blank">WhatsApp</a>
+</div>
+
+<footer>© <span id="year"></span> Panditaradhyula's Family!</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
