@@ -1,11 +1,10 @@
-# MK Developers Cloudflare Pages upload
+﻿# MK Developers static websites
 
-This Direct Upload Pages project contains three static sites:
+This repository holds the four static sites deployed through the Cloudflare Pages project connected to this repository:
 
-- `sites/amit-george/` → `amitgeorge.in`
-- `sites/athish-wedding-site/` → `athishniharikamoments.in`
-- `sites/panditaradhyula/` → `panditaradhyula.com`
+- `sites/amit-george/` — `amitgeorge.in`
+- `sites/athish-wedding-site/` — `athishniharikamoments.in`
+- `sites/panditaradhyula/` — `panditaradhyula.com` (includes `/condohousewarming/`)
+- `sites/nimbleq/` — `nimbleq.ca`
 
-The separate Cloudflare Worker `mk-developers-router` routes each domain to its folder. The top-level `404.html` prevents unknown paths from displaying a project directory.
-
-Each site folder contains its own `index.html`. No credentials are included.
+A Cloudflare Worker routes each domain to its matching site directory. Keep each site's assets inside its folder. Cloudflare Pages builds this repository as a static site with the repository root as the output directory.
