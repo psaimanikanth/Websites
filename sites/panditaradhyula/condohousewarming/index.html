@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<!-- Primary Meta Tags -->
+<title>Gruhapravesam Ceremony — Panditaradhyula</title>
+<meta name="title" content="Gruhapravesam Ceremony — Sai Manikanth Panditaradhyula">
+<meta name="description" content="Join us for the housewarming ceremony of Sai Manikanth Panditaradhyula. Blessings & celebration await!">
+
+<!-- Favicon for browsers -->
+<link rel="icon" type="image/png" sizes="32x32" href="https://condohousewarming.panditaradhyula.com/favicon1.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://condohousewarming.panditaradhyula.com/favicon1.png">
+<link rel="shortcut icon" type="image/icon" href="https://condohousewarming.panditaradhyula.com/favicon1.png"/>
+
+<!-- Apple Touch Icon for iOS devices -->
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://condohousewarming.panditaradhyula.com/favicon1.png">
+
+<!-- Microsoft Tiles -->
+<meta name="msapplication-TileColor" content="#9f7fbf">
+<meta name="msapplication-TileImage" content="https://condohousewarming.panditaradhyula.com/favicon1.png">
+<meta name="theme-color" content="#9f7fbf">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://condohousewarming.panditaradhyula.com/">
+<meta property="og:title" content="Gruhapravesam Ceremony — Sai Manikanth Panditaradhyula">
+<meta property="og:description" content="Join Manikanth for the housewarming ceremony. Blessings & celebration await!">
+<meta property="og:image" content="https://condohousewarming.panditaradhyula.com/og-image.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://condohousewarming.panditaradhyula.com/">
+<meta name="twitter:title" content="Gruhapravesam Ceremony — Sai Manikanth Panditaradhyula">
+<meta name="twitter:description" content="Join Manikanth for the housewarming ceremony. Blessings & celebration await!">
+<meta name="twitter:image" content="https://condohousewarming.panditaradhyula.com/og-image.jpg">
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- AOS for simple fade-in -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --lav-100: #f6f3fb;
+      --lav-200: #efe8fb;
+      --lav-500: #9f7fbf;
+      --gold: #d6b96a;
+      --sage: #a8c1b8;
+      --card-w: 880px;
+    }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: "Lora", serif;
+      background: linear-gradient(180deg, #fbf9fd 0%, #fff 50%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      color:#3b3b3b;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+    overflow-x: hidden; /* prevent horizontal scroll */
+    }
+
+    /* full-screen subtle background: condo image faint with blur */
+    .bg-wrap{
+      position:fixed;
+      inset:0;
+      z-index:0;
+      overflow:hidden;
+      pointer-events:none;
+    }
+    .bg-wrap::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      /*background-image: url('condo.png'); */
+      background-size:cover;
+      background-position:center;
+      filter: blur(6px) saturate(0.85) brightness(0.85) contrast(0.95);
+      transform: scale(1.06);
+      opacity:0.28;
+    }
+    .bg-wrap::after{
+      /* soft lavender overlay */
+      content:"";
+      position:absolute;
+      inset:0;
+      background: linear-gradient(135deg, rgba(244,236,250,0.12), rgba(255,255,255,0.15));
+      mix-blend-mode: soft-light;
+    }
+
+    /* centered invitation card */
+    .card{
+      position:relative;
+      z-index:2;
+      width:100%;
+      max-width:var(--card-w);
+      background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,248,252,0.98));
+      border-radius:20px;
+      box-shadow: 0 18px 40px rgba(44,33,80,0.12);
+      padding:36px;
+      overflow:hidden;
+      border: 1px solid rgba(160,130,200,0.08);
+    }
+
+    /* floral corner decorations (image asset) */
+    .corner-art{
+      position:absolute;
+      width:220px;
+      height:220px;
+      background-image: url('floral.png');
+      background-size:contain;
+      background-repeat:no-repeat;
+      opacity:0.95;
+      z-index:1;
+      pointer-events:none;
+    }
+    .corner-art.top-left{ top:-12px; left:-12px; transform: rotate(0deg) scale(1); opacity:0.95; }
+    .corner-art.bottom-right{ bottom:-18px; right:-18px; transform: rotate(180deg) scale(1.04); opacity:0.95; }
+
+    /* condo art above details */
+    .condo-art{
+      width: 100%;
+      max-width: 280px;
+      /*height: 150px;*/
+      margin: 0 auto 20px auto;
+      background-image: url('condo-art.png'); /* replace with your condo image */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .title {
+      font-family: "Great Vibes", cursive;
+      color: #6b2f7c;
+      font-size:50px;
+      line-height:0.9;
+      letter-spacing:0.4px;
+      margin:0;
+    }
+    .sub{
+      color:#60506a;
+      margin-top:8px;
+      font-size:18px;
+    }
+
+    .badge{
+      background: linear-gradient(135deg, rgba(159,127,191,0.12), rgba(214,185,106,0.06));
+      border: 1px solid rgba(159,127,191,0.08);
+      padding:10px 14px;
+      border-radius:12px;
+      text-align:center;
+      min-width:160px;
+    }
+    .badge .when{ font-weight:700; color:#3b2b45; }
+    .badge .label{ display:block; font-size:12px; color:#6d577a; margin-top:4px; }
+
+    .content{
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:28px;
+      margin-top:28px;
+    }
+
+    .details{
+      padding:18px 0;
+    }
+    .details h3{
+      margin:0 0 8px 0;
+      color:#4a3750;
+      font-weight:700;
+      font-size:20px;
+    }
+    .line{ display:flex; gap:12px; align-items:flex-start; margin:12px 0; }
+    .icon{
+      width:44px;height:44px;border-radius:10px;
+      display:inline-flex;align-items:center;justify-content:center;
+      background: linear-gradient(180deg, rgba(159,127,191,0.12), rgba(168,193,184,0.06));
+      color:#5a3b66;font-weight:700;font-size:20px;
+      border:1px solid rgba(120,95,140,0.06);
+    }
+    .meta{
+      font-size:16px;color:#4b3a52;
+    }
+    .muted{ font-size:14px;color:#7b6a80; margin-top:6px; }
+
+    .map{
+      border-radius:14px; overflow:hidden; border:1px solid rgba(60,40,80,0.04);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+    }
+
+    .rsvp{
+      margin-top:22px;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex;gap:10px;align-items:center;justify-content:center;
+      padding:12px 18px;border-radius:12px;border:none;cursor:pointer;
+      font-weight:700;font-size:15px;
+    }
+    .btn-primary{
+      background: linear-gradient(90deg,#8b5fbf,#c78bd3);
+      color:white; box-shadow: 0 8px 22px rgba(139,95,191,0.18);
+    }
+    .btn-ghost{
+      background:transparent; border:1px solid rgba(100,80,120,0.12); color:#5a3b66;
+    }
+
+    /* floating petals */
+    .petal{
+      position:absolute;
+      width:18px;height:18px;border-radius:50%;
+      background: radial-gradient(circle at 40% 30%, #fbe8ff, #efd9ff 40%, #e7d1ff 100%);
+      opacity:0.9;
+      z-index:3;
+      transform: translate3d(0,0,0);
+      pointer-events:none;
+      filter: drop-shadow(0 2px 6px rgba(150,100,160,0.09));
+    }
+
+    footer.note{
+      margin-top:22px;text-align:center;color:#6c5a72;font-size:14px;
+    }
+
+    /* responsiveness */
+    @media (max-width:980px){
+      .content{ grid-template-columns: 1fr; }
+      .badge{ min-width: auto; padding:8px 12px; }
+      .title{ font-size:40px; }
+      .corner-art{ width:160px; height:160px; opacity:0.85; }
+      .condo-art{ max-width:240px; height:180px; }
+    }
+    @media (max-width:520px){
+      body{ padding:18px; }
+      .card{ padding:22px; border-radius:16px; margin-top:620px;}
+      .title{ font-size:34px; }
+      .header{ flex-direction:column; align-items:flex-start; gap:8px; }
+      .condo-art{ max-width:200px; height:180px; margin-bottom:16px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- subtle condo background -->
+  <div class="bg-wrap" aria-hidden="true"></div>
+
+  <div class="card" data-aos="fade-up" style="">
+    <div class="corner-art top-left" aria-hidden="true"></div>
+    <div class="corner-art bottom-right" aria-hidden="true"></div>
+
+    <div class="header">
+      <div>
+        <h1 class="title">Gruhapravesam Ceremony</h1>
+        <div class="sub">Housewarming of <br> <strong>Sai Manikanth Panditaradhyula</strong></div>
+      </div>
+
+      <div class="badge" aria-hidden="false">
+        <div class="when">31 Oct 2025 · 6:00 AM</div>
+        <div class="label">Muhurtam at 6:00 AM — Ceremony & Breakfast</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- condo art image above details -->
+      <div class="condo-art" aria-hidden="true"></div>
+
+      <div class="details">
+        <h3>Details</h3>
+
+        <div class="line">
+          <div class="icon">📍</div>
+          <div>
+            <div class="meta">195 Redpath Ave, Unit 1606</div>
+            <div class="muted">Toronto, ON</div>
+          </div>
+        </div>
+
+        <div class="line">
+          <div class="icon">🕉️</div>
+          <div>
+            <div class="meta">Muhurtam & Pooja — 6:00 AM</div>
+            <div class="muted">Followed by breakfast & prasadam</div>
+          </div>
+        </div>
+
+        <div class="line">
+          <div class="icon">👤</div>
+          <div>
+            <div class="meta">Hosted by: Sai Manikanth Panditaradhyula</div>
+            <div class="muted">With blessings from Panditaradhyula Durga Lakshmi & Venkat Vijay Kumar, Sai Nikhita and NVSN Bharath & Near and Dear</div>
+          </div>
+        </div>
+
+        <div class="rsvp">
+          <!-- Replace REPLACE_WITH_PHONE_NUMBER with your number -->
+          <a class="btn btn-primary" id="waBtn" href="https://wa.me/14375576679?text=Hi%20Manikanth%2C%20I%20would%20like%20to%20confirm%20my%20presence%20for%20the%20Gruhapravesam%20on%2031%20Oct." target="_blank" rel="noreferrer">
+            📞 WhatsApp to Confirm
+          </a>
+
+          <button class="btn btn-ghost" id="directionsBtn">🧭 Open in Maps</button>
+
+          <button class="btn btn-ghost" id="playAudioToggle" aria-pressed="false" title="Play / Pause music">🔈 Music</button>
+        </div>
+
+        <div class="note" style="margin-top:18px;">
+          Your presence & blessings will make the occasion meaningful adding pleasure and joy.
+        </div>
+      </div>
+
+      <div>
+        <div class="map" style="height:100%; min-height:240px;">
+          <iframe title="map" src="https://www.google.com/maps?q=195+Redpath+Ave+Unit+1606+Toronto&output=embed" style="width:100%;height:100%;border:0;" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <footer class="note" aria-hidden="false">
+      © <span id="year"></span> Panditaradhyula's</footer>
+  </div>
+
+  <!-- floating petals -->
+  <div class="petal" id="p1" style="left:20%; top:8%; opacity:0.95;"></div>
+  <div class="petal" id="p2" style="left:12%; top:30%; opacity:0.85;"></div>
+  <div class="petal" id="p3" style="left:72%; top:10%; opacity:0.9;"></div>
+  <div class="petal" id="p4" style="left:84%; top:36%; opacity:0.88;"></div>
+  <div class="petal" id="p5" style="left:48%; top:6%; opacity:0.9;"></div>
+
+  <!-- Audio -->
+  <audio id="bgAudio" loop preload="auto" style="display:none" crossorigin="anonymous">
+    <source src="carnatic-loop.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script>
+  // --- Force scroll to top on every refresh/load ---
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+  window.addEventListener('load', () => {
+    window.scrollTo(0,0);
+  });
+
+  // --- Set copyright year dynamically ---
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // --- Initialize AOS animations ---
+  AOS.init({ duration:700, easing:'ease-out-quart', once:true });
+
+  // --- Directions button ---
+  document.getElementById('directionsBtn').addEventListener('click', function(){
+    window.open('https://www.google.com/maps/dir/?api=1&destination=195+Redpath+Ave+Unit+1606+Toronto', '_blank');
+  });
+
+  // --- Background audio ---
+  const bgAudio = document.getElementById('bgAudio');
+  const btn = document.getElementById('playAudioToggle');
+
+  (async function tryAutoPlay(){
+    try { 
+      bgAudio.muted = true; 
+      await bgAudio.play(); 
+      btn.textContent = '🔈 Music (muted)'; 
+      btn.setAttribute('aria-pressed','false'); 
+    }
+    catch (e) { btn.textContent = '🔈 Music'; }
+  })();
+
+  btn.addEventListener('click', async function(){
+    if (bgAudio.paused){
+      bgAudio.muted = false;
+      try { 
+        await bgAudio.play(); 
+        btn.textContent = '🔊 Music (on)'; 
+        btn.setAttribute('aria-pressed','true'); 
+      }
+      catch(e){ 
+        alert('Playback blocked — interact with page then retry.'); 
+      }
+    } else {
+      bgAudio.pause(); 
+      bgAudio.currentTime = 0; 
+      btn.textContent = '🔈 Music'; 
+      btn.setAttribute('aria-pressed','false');
+    }
+  });
+
+  // --- Floating petals animation using GSAP ---
+  const petals = ['#p1','#p2','#p3','#p4','#p5'];
+  petals.forEach((sel, i) => {
+    const el = document.querySelector(sel);
+    if (!el) return;
+    gsap.to(el, {
+      y: 40 + Math.random()*140,
+      x: (Math.random() > 0.5 ? 20 : -20) * (i+1),
+      rotation: (Math.random()*80) - 40,
+      duration: 6 + Math.random()*6,
+      yoyo: true,
+      repeat: -1,
+      ease: "sine.inOut",
+      delay: i * 0.6
+    });
+  });
+
+  // --- WhatsApp button accessible via keyboard ---
+  document.getElementById('waBtn').addEventListener('keydown', (e)=>{
+    if(e.key === 'Enter' || e.key === ' ') e.target.click();
+  });
+</script
+
+</body>
+</html>
