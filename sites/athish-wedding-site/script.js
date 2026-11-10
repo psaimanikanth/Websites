@@ -1,5 +1,5 @@
 // Replace this placeholder with the couple's YouTube livestream URL.
-const YOUTUBE_LIVE_URL = "https://www.youtube.com/";
+const YOUTUBE_LIVE_URL = "https://youtube.com/live/GcMMXXQl1uQ";
 
 document.querySelector("#youtube-link").href = YOUTUBE_LIVE_URL;
 
